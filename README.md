@@ -7,7 +7,7 @@
 ---
 MMScrollPresenter is a control for iOS development that takes an array of MMScrollPages and displays them in your UIScrollView. 
 
-I was initially insipired by a control in Destiny App, so I'd recommend checking that out as well.
+I was initially insipired by a control in the Destiny App, so I'd recommend checking that out as well.
 
 ### Example Usage
 
