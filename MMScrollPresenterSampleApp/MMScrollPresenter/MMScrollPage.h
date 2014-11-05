@@ -3,7 +3,6 @@
 //  MMScrollPresenter
 //
 //  Created by Malleo, Mitch on 10/31/14.
-//  Copyright (c) 2014 Encore. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
