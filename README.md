@@ -1,7 +1,7 @@
 # MMScrollPresenter
 ---
 
-![](file:///Users/mmalleo/Desktop/Personal%20Projects/MMScrollPresenter/mmScrollPresenterGif.gif)
+![](https://github.com/MitchellMalleo/MMScrollPresenter/blob/master/mmScrollPresenter.gif)
 
 ## Overview
 ---
