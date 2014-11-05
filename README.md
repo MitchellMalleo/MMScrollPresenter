@@ -1,7 +1,7 @@
 # MMScrollPresenter
 ---
 
-![Mou ](file:///Users/mmalleo/Desktop/Personal%20Projects/MMScrollPresenter/mmScrollPresenterGif.gif)
+![](file:///Users/mmalleo/Desktop/Personal%20Projects/MMScrollPresenter/mmScrollPresenterGif.gif)
 
 ## Overview
 ---
@@ -11,7 +11,7 @@ I was initially insipired by a control in Destiny App, so I'd recommend checking
 
 ### Example Usage
 
-1. Download the project and include MMScrollPresenter.h/.m, MMScrollPage.h/.m, arrow.png, and arrow@2x.png
+1. Download the project and include MMScrollPresenter.h/.m, MMScrollPage.h/.m, arrow/@2x.png
 2. Drag and drop a UIScrollView into your Interface Builder and under the custom class section, subclass your UIScrollView to MMScrollPresenter
 3. Now add: `@property (weak, nonatomic) IBOutlet MMScrollPresenter *mmScrollPresenter;` to your list of properties.
 4. Add a MMScrollPage to the MMScrollPresenter
