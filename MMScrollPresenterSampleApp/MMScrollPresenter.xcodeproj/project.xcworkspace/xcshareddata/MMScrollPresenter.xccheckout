@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6BBD8770-CB47-4C21-A7E2-5C10FA25C8B0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MMScrollPresenter</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B42ADBF152DBBE9BB376C0C4EE6AB934F750F87B</key>
+		<string>https://github.com/MitchellMalleo/MMScrollPresenter.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MMScrollPresenterSampleApp/MMScrollPresenter.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B42ADBF152DBBE9BB376C0C4EE6AB934F750F87B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MitchellMalleo/MMScrollPresenter.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B42ADBF152DBBE9BB376C0C4EE6AB934F750F87B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B42ADBF152DBBE9BB376C0C4EE6AB934F750F87B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MMScrollPresenter</string>
+		</dict>
+	</array>
+</dict>
+</plist>
