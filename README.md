@@ -28,3 +28,7 @@ Here is a code snippet from the example app in the `- (void)viewDidLoad` method 
     firstPage.titleBackgroundColor = [UIColor colorWithRed:119/255.0f green:92/255.0f blue:166/255.0f alpha:0.5];
     
     [self.mmScrollPresenter setupViewsWithArray:@[firstPage]];
+
+## License
+
+APIdleManager is available under the MIT license. See the LICENSE file for more info.
