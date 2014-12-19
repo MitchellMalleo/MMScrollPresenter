@@ -31,4 +31,4 @@ Here is a code snippet from the example app in the `- (void)viewDidLoad` method 
 
 ## License
 
-APIdleManager is available under the MIT license. See the LICENSE file for more info.
+MMScrollPresenter is available under the MIT license. See the LICENSE file for more info.
