@@ -10,15 +10,13 @@
 
 @interface MMScrollPage : NSObject
 
--(id)init;
+- (id)init;
 
 @property (nonatomic, strong) UIView *backgroundView;
-
 @property (nonatomic, strong) UIView *titleView;
 @property (nonatomic, strong) UIColor *titleBackgroundColor;
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UILabel *detailLabel;
-
 @property (nonatomic, strong) UIImage *icon;
 
 @end

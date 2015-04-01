@@ -13,10 +13,10 @@ static int pageViewPadding = 20;
 
 @interface MMScrollPresenter()
 
-@property (strong, nonatomic) NSMutableArray *pageArray;
-@property (strong, nonatomic) UIScrollView *titleScrollView;
-@property (strong, nonatomic) UIScrollView *labelScrollView;
-@property (strong, nonatomic) NSMutableArray *labelScrollViewArray;
+@property (nonatomic, strong) NSMutableArray *pageArray;
+@property (nonatomic, strong) UIScrollView *titleScrollView;
+@property (nonatomic, strong) UIScrollView *labelScrollView;
+@property (nonatomic, strong) NSMutableArray *labelScrollViewArray;
 
 @property CGRect backgroundFrame;
 
@@ -27,9 +27,13 @@ static int pageViewPadding = 20;
 
 @end
 
+#pragma mark - MMScrollPresenter
+
 @implementation MMScrollPresenter
 
--(void)addMMScrollPage:(MMScrollPage *)page
+#pragma mark - Public methods
+
+- (void)addMMScrollPage:(MMScrollPage *)page
 {
     if(self.pageArray == nil)
     {
@@ -48,7 +52,7 @@ static int pageViewPadding = 20;
     [self setupViews];
 }
 
--(void)setupViewsWithArray:(NSMutableArray *)array
+- (void)addMMScrollPageArray:(NSMutableArray *)array
 {
     [self setupScrollPresenter];
     
@@ -57,19 +61,7 @@ static int pageViewPadding = 20;
     [self setupViews];
 }
 
--(void)setupScrollPresenter
-{
-    self.showsHorizontalScrollIndicator = NO;
-    self.showsVerticalScrollIndicator = NO;
-    self.pagingEnabled = YES;
-    self.delegate = self;
-    self.bounces = NO;
-    
-    self.pageArray = [[NSMutableArray alloc] init];
-    self.labelScrollViewArray = [[NSMutableArray alloc] init];
-}
-
--(void)setupViews
+- (void)setupViews
 {
     self.titleScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, self.frame.size.height - titleViewHeight, self.frame.size.width * [self.pageArray count], titleViewHeight)];
     [self addSubview:self.titleScrollView];
@@ -141,14 +133,28 @@ static int pageViewPadding = 20;
     self.titleScrollView.contentSize = self.contentSize;
 }
 
--(int)currentPage
+- (int)currentPage
 {
     return self.contentOffset.x / self.frame.size.width;
 }
 
--(void)animateToPageAtIndex:(int)index
+- (void)animateToPageAtIndex:(int)index
 {
     [self setContentOffset:CGPointMake(self.frame.size.width * index, self.contentOffset.y) animated:YES];
+}
+
+#pragma mark - Private methods
+
+- (void)setupScrollPresenter
+{
+    self.showsHorizontalScrollIndicator = NO;
+    self.showsVerticalScrollIndicator = NO;
+    self.pagingEnabled = YES;
+    self.delegate = self;
+    self.bounces = NO;
+    
+    self.pageArray = [[NSMutableArray alloc] init];
+    self.labelScrollViewArray = [[NSMutableArray alloc] init];
 }
 
 #pragma mark - UIScrollViewDelegate

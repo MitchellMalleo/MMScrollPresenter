@@ -10,10 +10,10 @@
 
 @interface MMScrollPresenter : UIScrollView <UIScrollViewDelegate>
 
--(void)addMMScrollPage:(MMScrollPage *)page;
--(void)setupViewsWithArray:(NSArray *)array;
+- (void)addMMScrollPage:(MMScrollPage *)page;
+- (void)addMMScrollPageArray:(NSArray *)array;
 
--(int)currentPage;
--(void)animateToPageAtIndex:(int)index;
+- (int)currentPage;
+- (void)animateToPageAtIndex:(int)index;
 
 @end

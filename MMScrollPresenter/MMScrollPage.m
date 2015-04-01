@@ -3,14 +3,17 @@
 //  MMScrollPresenter
 //
 //  Created by Malleo, Mitch on 10/31/14.
-//  Copyright (c) 2014 Encore. All rights reserved.
 //
 
 #import "MMScrollPage.h"
 
+#pragma mark - MMScrollPage
+
 @implementation MMScrollPage
 
--(id)init
+#pragma mark - Public methods
+
+- (id)init
 {
     self = [super init];
     

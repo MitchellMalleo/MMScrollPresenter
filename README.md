@@ -13,7 +13,7 @@ I was initially insipired by a control in the Destiny App, so I'd recommend chec
 
 1. Download the repo and include MMScrollPresenter.h/.m, MMScrollPage.h/.m, arrow/@2x.png in your app
 2. Drag and drop a UIScrollView into your Interface Builder and under the custom class section, subclass your UIScrollView to MMScrollPresenter
-3. Now add: `@property (weak, nonatomic) IBOutlet MMScrollPresenter *mmScrollPresenter;` to your list of properties and dont forget to link it up in your Interface Builder
+3. Now add: `@property (nonatomic, weak) IBOutlet MMScrollPresenter *mmScrollPresenter;` to your list of properties and dont forget to link it up in your Interface Builder
 4. Add a MMScrollPage to the MMScrollPresenter
 
 Here is a code snippet from the example app in the `- (void)viewDidLoad` method for #4:

@@ -7,9 +7,13 @@
 
 #import "MMScrollPage.h"
 
+#pragma mark - MMScrollPage
+
 @implementation MMScrollPage
 
--(id)init
+#pragma mark - Public methods
+
+- (id)init
 {
     self = [super init];
     

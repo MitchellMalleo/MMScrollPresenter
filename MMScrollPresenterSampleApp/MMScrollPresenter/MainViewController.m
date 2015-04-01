@@ -9,7 +9,7 @@
 
 @interface MainViewController ()
 
-@property (weak, nonatomic) IBOutlet MMScrollPresenter *mmScrollPresenter;
+@property (nonatomic, weak) IBOutlet MMScrollPresenter *mmScrollPresenter;
 
 @end
 
@@ -46,7 +46,7 @@
     [thirdPage.backgroundView addSubview:forestImage];
     thirdPage.titleBackgroundColor = [UIColor colorWithRed:92/255.0f green:166/255.0f blue:114/255.0f alpha:1.0];
     
-    [self.mmScrollPresenter setupViewsWithArray:@[firstPage, secondPage, thirdPage]];
+    [self.mmScrollPresenter addMMScrollPageArray:@[firstPage, secondPage, thirdPage]];
 }
 
 @end
