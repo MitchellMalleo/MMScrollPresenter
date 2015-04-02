@@ -12,11 +12,11 @@
 
 - (id)init;
 
-@property (nonatomic, strong) UIView *backgroundView;
-@property (nonatomic, strong) UIView *titleView;
-@property (nonatomic, strong) UIColor *titleBackgroundColor;
-@property (nonatomic, strong) UILabel *titleLabel;
-@property (nonatomic, strong) UILabel *detailLabel;
-@property (nonatomic, strong) UIImage *icon;
+@property (strong, nonatomic) UIView *backgroundView;
+@property (strong, nonatomic) UIView *titleView;
+@property (strong, nonatomic) UIColor *titleBackgroundColor;
+@property (strong, nonatomic) UILabel *titleLabel;
+@property (strong, nonatomic) UILabel *detailLabel;
+@property (strong, nonatomic) UIImage *icon;
 
 @end

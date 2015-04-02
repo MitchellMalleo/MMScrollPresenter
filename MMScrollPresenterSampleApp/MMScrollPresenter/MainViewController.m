@@ -9,7 +9,7 @@
 
 @interface MainViewController ()
 
-@property (nonatomic, weak) IBOutlet MMScrollPresenter *mmScrollPresenter;
+@property (weak, nonatomic) IBOutlet MMScrollPresenter *mmScrollPresenter;
 
 @end
 

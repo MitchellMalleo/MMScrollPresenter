@@ -7,16 +7,16 @@
 
 #import "MMScrollPresenter.h"
 
-static int xOffset = 50;
-static int titleViewHeight = 75;
-static int pageViewPadding = 20;
+static int const titleViewXOffset = 50;
+static int const titleViewHeight = 75;
+static int const pageViewPadding = 20;
 
 @interface MMScrollPresenter()
 
-@property (nonatomic, strong) NSMutableArray *pageArray;
-@property (nonatomic, strong) UIScrollView *titleScrollView;
-@property (nonatomic, strong) UIScrollView *labelScrollView;
-@property (nonatomic, strong) NSMutableArray *labelScrollViewArray;
+@property (strong, nonatomic) NSMutableArray *pageArray;
+@property (strong, nonatomic) UIScrollView *titleScrollView;
+@property (strong, nonatomic) UIScrollView *labelScrollView;
+@property (strong, nonatomic) NSMutableArray *labelScrollViewArray;
 
 @property CGRect backgroundFrame;
 
@@ -77,22 +77,22 @@ static int pageViewPadding = 20;
         if([self.pageArray count] == 1)
         {
             self.titleViewFrame = CGRectMake(0, 0, self.backgroundFrame.size.width, titleViewHeight);
-            self.iconFrame = CGRectMake(-xOffset, (titleViewHeight / 2) - (iconView.frame.size.height / 2), iconView.frame.size.width, iconView.frame.size.height);
+            self.iconFrame = CGRectMake(- titleViewXOffset, (titleViewHeight / 2) - (iconView.frame.size.height / 2), iconView.frame.size.width, iconView.frame.size.height);
         }
         else if(pageArrayIndex == 0)
         {
-            self.titleViewFrame = CGRectMake(0, 0, self.backgroundFrame.size.width - xOffset, titleViewHeight);
-            self.iconFrame = CGRectMake(-xOffset, (titleViewHeight / 2) - (iconView.frame.size.height / 2), iconView.frame.size.width, iconView.frame.size.height);
+            self.titleViewFrame = CGRectMake(0, 0, self.backgroundFrame.size.width -  titleViewXOffset, titleViewHeight);
+            self.iconFrame = CGRectMake(- titleViewXOffset, (titleViewHeight / 2) - (iconView.frame.size.height / 2), iconView.frame.size.width, iconView.frame.size.height);
         }
         else if(pageArrayIndex != [self.pageArray count] - 1)
         {
-            self.titleViewFrame = CGRectMake(self.frame.size.width * pageArrayIndex - xOffset, 0, self.backgroundFrame.size.width - xOffset, titleViewHeight);
-            self.iconFrame = CGRectMake(xOffset / 2 - iconView.frame.size.width / 2, (titleViewHeight / 2) - (iconView.frame.size.height / 2), iconView.frame.size.width, iconView.frame.size.height);
+            self.titleViewFrame = CGRectMake(self.frame.size.width * pageArrayIndex -  titleViewXOffset, 0, self.backgroundFrame.size.width -  titleViewXOffset, titleViewHeight);
+            self.iconFrame = CGRectMake( titleViewXOffset / 2 - iconView.frame.size.width / 2, (titleViewHeight / 2) - (iconView.frame.size.height / 2), iconView.frame.size.width, iconView.frame.size.height);
         }
         else if(pageArrayIndex == [self.pageArray count] - 1)
         {
-            self.titleViewFrame = CGRectMake(self.frame.size.width * pageArrayIndex - (xOffset * 2), 0, self.backgroundFrame.size.width + xOffset, titleViewHeight);
-            self.iconFrame = CGRectMake(xOffset + (xOffset / 2 - iconView.frame.size.width / 2), (titleViewHeight / 2) - (iconView.frame.size.height / 2), iconView.frame.size.width, iconView.frame.size.height);
+            self.titleViewFrame = CGRectMake(self.frame.size.width * pageArrayIndex - ( titleViewXOffset * 2), 0, self.backgroundFrame.size.width +  titleViewXOffset, titleViewHeight);
+            self.iconFrame = CGRectMake( titleViewXOffset + ( titleViewXOffset / 2 - iconView.frame.size.width / 2), (titleViewHeight / 2) - (iconView.frame.size.height / 2), iconView.frame.size.width, iconView.frame.size.height);
         }
         
         [page.backgroundView setFrame:self.backgroundFrame];
@@ -101,10 +101,10 @@ static int pageViewPadding = 20;
         
         [page.titleView setFrame:self.titleViewFrame];
         
-        CGRect titleLabelFrame = CGRectMake(10 + (xOffset * pageArrayIndex), titleViewHeight / 100, page.titleView.frame.size.width - pageViewPadding, titleViewHeight / 1.7);
+        CGRect titleLabelFrame = CGRectMake(10 + ( titleViewXOffset * pageArrayIndex), titleViewHeight / 100, page.titleView.frame.size.width - pageViewPadding, titleViewHeight / 1.7);
         page.titleLabel.frame = titleLabelFrame;
         
-        CGRect titleDetailLabelFrame = CGRectMake(10 + (xOffset * pageArrayIndex), titleViewHeight / 2.2, page.titleView.frame.size.width - pageViewPadding, titleViewHeight / 2);
+        CGRect titleDetailLabelFrame = CGRectMake(10 + ( titleViewXOffset * pageArrayIndex), titleViewHeight / 2.2, page.titleView.frame.size.width - pageViewPadding, titleViewHeight / 2);
         page.detailLabel.frame = titleDetailLabelFrame;
         
         self.labelScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, page.titleView.frame.size.width, page.titleView.frame.size.height)];
@@ -163,11 +163,11 @@ static int pageViewPadding = 20;
 {
     [scrollView setContentOffset: CGPointMake(scrollView.contentOffset.x, 0)];
     
-    [self.titleScrollView setContentOffset:CGPointMake(scrollView.contentOffset.x * -(xOffset / self.frame.size.width), scrollView.contentOffset.y) animated:NO];
+    [self.titleScrollView setContentOffset:CGPointMake(scrollView.contentOffset.x * -( titleViewXOffset / self.frame.size.width), scrollView.contentOffset.y) animated:NO];
     
     for(UIScrollView *labelScrollView in self.labelScrollViewArray)
     {
-        [labelScrollView setContentOffset:CGPointMake(scrollView.contentOffset.x * (xOffset / self.frame.size.width), scrollView.contentOffset.y) animated:NO];
+        [labelScrollView setContentOffset:CGPointMake(scrollView.contentOffset.x * ( titleViewXOffset / self.frame.size.width), scrollView.contentOffset.y) animated:NO];
     }
 }
 
