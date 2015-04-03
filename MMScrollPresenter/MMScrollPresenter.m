@@ -159,7 +159,7 @@ static int const pageViewPadding = 20;
 
 #pragma mark - UIScrollViewDelegate
 
--(void)scrollViewDidScroll:(UIScrollView *)scrollView
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     [scrollView setContentOffset: CGPointMake(scrollView.contentOffset.x, 0)];
     

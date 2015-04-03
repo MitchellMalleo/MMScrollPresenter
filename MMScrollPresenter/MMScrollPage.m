@@ -11,7 +11,7 @@
 
 @implementation MMScrollPage
 
-#pragma mark - Public methods
+#pragma mark - Lifecycle
 
 - (id)init
 {
