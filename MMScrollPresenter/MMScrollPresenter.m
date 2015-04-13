@@ -64,8 +64,8 @@ static int const pageViewPadding = 20;
 - (void)setupViews
 {
     self.titleScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, self.frame.size.height - titleViewHeight, self.frame.size.width * [self.pageArray count], titleViewHeight)];
+    [self.titleScrollView setScrollEnabled:NO];
     [self addSubview:self.titleScrollView];
-    
     int pageArrayIndex = 0;
     
     for (MMScrollPage *page in self.pageArray)
