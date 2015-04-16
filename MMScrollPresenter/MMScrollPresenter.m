@@ -10,14 +10,14 @@
 static int const titleViewXOffset = 50;
 static int const titleViewHeight = 75;
 static int const pageViewPadding = 20;
-
+static int const pageCtrlHeight = 10;
 @interface MMScrollPresenter()
 
 @property (strong, nonatomic) NSMutableArray *pageArray;
 @property (strong, nonatomic) UIScrollView *titleScrollView;
 @property (strong, nonatomic) UIScrollView *labelScrollView;
 @property (strong, nonatomic) NSMutableArray *labelScrollViewArray;
-
+@property (strong, nonatomic) UIPageControl * pageCtl;
 @property CGRect backgroundFrame;
 
 @property CGRect titleViewFrame;
@@ -63,9 +63,19 @@ static int const pageViewPadding = 20;
 
 - (void)setupViews
 {
+    
     self.titleScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, self.frame.size.height - titleViewHeight, self.frame.size.width * [self.pageArray count], titleViewHeight)];
-    [self.titleScrollView setScrollEnabled:NO];
+    
     [self addSubview:self.titleScrollView];
+    self.pageCtl = [[UIPageControl alloc]initWithFrame:CGRectMake(0,self.frame.size.height - titleViewHeight/2, self.frame.size.width, pageCtrlHeight)];
+    self.pageCtl.numberOfPages = self.pageArray.count;
+    
+    [self.pageCtl.layer setCornerRadius:8];
+    self.pageCtl.backgroundColor=[UIColor clearColor];
+    
+    self.pageCtl.currentPage = 0;
+    [self.superview addSubview:self.pageCtl];
+    
     int pageArrayIndex = 0;
     
     for (MMScrollPage *page in self.pageArray)
@@ -152,7 +162,6 @@ static int const pageViewPadding = 20;
     self.pagingEnabled = YES;
     self.delegate = self;
     self.bounces = NO;
-    
     self.pageArray = [[NSMutableArray alloc] init];
     self.labelScrollViewArray = [[NSMutableArray alloc] init];
 }
@@ -169,6 +178,12 @@ static int const pageViewPadding = 20;
     {
         [labelScrollView setContentOffset:CGPointMake(scrollView.contentOffset.x * ( titleViewXOffset / self.frame.size.width), scrollView.contentOffset.y) animated:NO];
     }
+    
+    
+}
+
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    self.pageCtl.currentPage = self.contentOffset.x/self.frame.size.width;
 }
 
 @end
