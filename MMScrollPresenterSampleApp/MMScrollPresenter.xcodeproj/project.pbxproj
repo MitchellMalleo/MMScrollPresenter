@@ -14,13 +14,13 @@
 		332A88A71A043EEA00C998B5 /* MMScrollPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 332A88A61A043EEA00C998B5 /* MMScrollPresenterTests.m */; };
 		332A88B31A043F0400C998B5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 332A88B11A043F0400C998B5 /* MainViewController.m */; };
 		332A88B41A043F0400C998B5 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 332A88B21A043F0400C998B5 /* MainViewController.xib */; };
-		332A88B91A043FF700C998B5 /* MMScrollPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 332A88B81A043FF700C998B5 /* MMScrollPresenter.m */; };
-		332A88C31A044BDB00C998B5 /* MMScrollPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 332A88C21A044BDB00C998B5 /* MMScrollPage.m */; };
-		332A88C71A091F8C00C998B5 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 332A88C61A091F8C00C998B5 /* arrow.png */; };
-		332A88C91A091FBD00C998B5 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 332A88C81A091FBD00C998B5 /* arrow@2x.png */; };
 		332A88CD1A0962EA00C998B5 /* dock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 332A88CC1A0962EA00C998B5 /* dock.jpg */; };
 		332A88CF1A0964FF00C998B5 /* forest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 332A88CE1A0964FF00C998B5 /* forest.jpg */; };
 		332A88D31A09692100C998B5 /* mountains.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 332A88D21A09692100C998B5 /* mountains.jpg */; };
+		3399FB151AE73156009EC58A /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3399FB131AE73156009EC58A /* arrow.png */; };
+		3399FB161AE73156009EC58A /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3399FB141AE73156009EC58A /* arrow@2x.png */; };
+		3399FB1B1AE7315F009EC58A /* MMScrollPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399FB181AE7315F009EC58A /* MMScrollPage.m */; };
+		3399FB1C1AE7315F009EC58A /* MMScrollPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399FB1A1AE7315F009EC58A /* MMScrollPresenter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,15 +47,15 @@
 		332A88B01A043F0400C998B5 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		332A88B11A043F0400C998B5 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		332A88B21A043F0400C998B5 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		332A88B71A043FF700C998B5 /* MMScrollPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMScrollPresenter.h; sourceTree = "<group>"; };
-		332A88B81A043FF700C998B5 /* MMScrollPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMScrollPresenter.m; sourceTree = "<group>"; };
-		332A88C11A044BDB00C998B5 /* MMScrollPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMScrollPage.h; sourceTree = "<group>"; };
-		332A88C21A044BDB00C998B5 /* MMScrollPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMScrollPage.m; sourceTree = "<group>"; };
-		332A88C61A091F8C00C998B5 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
-		332A88C81A091FBD00C998B5 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
 		332A88CC1A0962EA00C998B5 /* dock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dock.jpg; sourceTree = "<group>"; };
 		332A88CE1A0964FF00C998B5 /* forest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = forest.jpg; sourceTree = "<group>"; };
 		332A88D21A09692100C998B5 /* mountains.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mountains.jpg; sourceTree = "<group>"; };
+		3399FB131AE73156009EC58A /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = ../../Assets/arrow.png; sourceTree = "<group>"; };
+		3399FB141AE73156009EC58A /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow@2x.png"; path = "../../Assets/arrow@2x.png"; sourceTree = "<group>"; };
+		3399FB171AE7315F009EC58A /* MMScrollPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMScrollPage.h; path = ../../Classes/MMScrollPage.h; sourceTree = "<group>"; };
+		3399FB181AE7315F009EC58A /* MMScrollPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMScrollPage.m; path = ../../Classes/MMScrollPage.m; sourceTree = "<group>"; };
+		3399FB191AE7315F009EC58A /* MMScrollPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMScrollPresenter.h; path = ../../Classes/MMScrollPresenter.h; sourceTree = "<group>"; };
+		3399FB1A1AE7315F009EC58A /* MMScrollPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMScrollPresenter.m; path = ../../Classes/MMScrollPresenter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +107,8 @@
 		332A888A1A043EEA00C998B5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3399FB121AE730BB009EC58A /* Images */,
+				3399FB111AE730AA009EC58A /* Icons */,
 				332A88971A043EEA00C998B5 /* Images.xcassets */,
 				332A88991A043EEA00C998B5 /* LaunchScreen.xib */,
 				332A888B1A043EEA00C998B5 /* Info.plist */,
@@ -155,17 +157,31 @@
 		332A88BA1A04400200C998B5 /* MMScrollPresenter */ = {
 			isa = PBXGroup;
 			children = (
-				332A88B71A043FF700C998B5 /* MMScrollPresenter.h */,
-				332A88B81A043FF700C998B5 /* MMScrollPresenter.m */,
-				332A88C11A044BDB00C998B5 /* MMScrollPage.h */,
-				332A88C21A044BDB00C998B5 /* MMScrollPage.m */,
-				332A88C61A091F8C00C998B5 /* arrow.png */,
-				332A88C81A091FBD00C998B5 /* arrow@2x.png */,
+				3399FB171AE7315F009EC58A /* MMScrollPage.h */,
+				3399FB181AE7315F009EC58A /* MMScrollPage.m */,
+				3399FB191AE7315F009EC58A /* MMScrollPresenter.h */,
+				3399FB1A1AE7315F009EC58A /* MMScrollPresenter.m */,
+			);
+			name = MMScrollPresenter;
+			sourceTree = "<group>";
+		};
+		3399FB111AE730AA009EC58A /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				3399FB131AE73156009EC58A /* arrow.png */,
+				3399FB141AE73156009EC58A /* arrow@2x.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		3399FB121AE730BB009EC58A /* Images */ = {
+			isa = PBXGroup;
+			children = (
 				332A88CC1A0962EA00C998B5 /* dock.jpg */,
 				332A88CE1A0964FF00C998B5 /* forest.jpg */,
 				332A88D21A09692100C998B5 /* mountains.jpg */,
 			);
-			name = MMScrollPresenter;
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,12 +265,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				332A889B1A043EEA00C998B5 /* LaunchScreen.xib in Resources */,
-				332A88C91A091FBD00C998B5 /* arrow@2x.png in Resources */,
-				332A88C71A091F8C00C998B5 /* arrow.png in Resources */,
 				332A88CF1A0964FF00C998B5 /* forest.jpg in Resources */,
 				332A88D31A09692100C998B5 /* mountains.jpg in Resources */,
 				332A88B41A043F0400C998B5 /* MainViewController.xib in Resources */,
+				3399FB161AE73156009EC58A /* arrow@2x.png in Resources */,
 				332A88CD1A0962EA00C998B5 /* dock.jpg in Resources */,
+				3399FB151AE73156009EC58A /* arrow.png in Resources */,
 				332A88981A043EEA00C998B5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,9 +291,9 @@
 			files = (
 				332A88901A043EEA00C998B5 /* AppDelegate.m in Sources */,
 				332A88B31A043F0400C998B5 /* MainViewController.m in Sources */,
-				332A88C31A044BDB00C998B5 /* MMScrollPage.m in Sources */,
 				332A888D1A043EEA00C998B5 /* main.m in Sources */,
-				332A88B91A043FF700C998B5 /* MMScrollPresenter.m in Sources */,
+				3399FB1C1AE7315F009EC58A /* MMScrollPresenter.m in Sources */,
+				3399FB1B1AE7315F009EC58A /* MMScrollPage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +476,7 @@
 				332A88AC1A043EEA00C998B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		332A88AD1A043EEA00C998B5 /* Build configuration list for PBXNativeTarget "MMScrollPresenterTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +485,7 @@
 				332A88AF1A043EEA00C998B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
