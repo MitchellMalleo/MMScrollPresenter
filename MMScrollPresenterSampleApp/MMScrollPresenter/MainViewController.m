@@ -19,6 +19,8 @@
 {
     [super viewDidLoad];
     
+    [self.mmScrollPresenter setFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, self.mmScrollPresenter.frame.size.height)];
+    
     UIImageView *mountainImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mountains.jpg"]];
     [mountainImage setFrame:CGRectMake(0, 0, self.mmScrollPresenter.frame.size.width, self.mmScrollPresenter.frame.size.height)];
     
