@@ -10,7 +10,7 @@
 
 @interface MMScrollPage : NSObject
 
-- (id)init;
+- (instancetype)init;
 
 @property (strong, nonatomic) UIView *backgroundView;
 @property (strong, nonatomic) UIView *titleView;

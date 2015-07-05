@@ -13,7 +13,7 @@
 
 #pragma mark - Lifecycle
 
-- (id)init
+- (instancetype)init
 {
     self = [super init];
     
@@ -24,21 +24,21 @@
         
         self.titleLabel = [[UILabel alloc] init];
         self.titleLabel.adjustsFontSizeToFitWidth = YES;
-        [self.titleLabel setText:@"Default Title Text"];
-        [self.titleLabel setLineBreakMode:NSLineBreakByWordWrapping];
-        [self.titleLabel setTextColor:[UIColor whiteColor]];
+        self.titleLabel.text = @"Default Title Text";
+        self.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        self.titleLabel.textColor = [UIColor whiteColor];
         self.titleLabel.font = [UIFont fontWithName:@"Helvetica Neue" size:16];
         self.titleLabel.numberOfLines = 2;
         
         self.detailLabel = [[UILabel alloc] init];
         self.detailLabel.adjustsFontSizeToFitWidth = YES;
-        [self.detailLabel setText:@"Default Detail Text"];
-        [self.detailLabel setTextColor:[UIColor whiteColor]];
-        [self.detailLabel setLineBreakMode:NSLineBreakByWordWrapping];
+        self.detailLabel.text = @"Default Detail Text";
+        self.detailLabel.textColor = [UIColor whiteColor];
+        self.detailLabel.lineBreakMode = NSLineBreakByWordWrapping;
         self.detailLabel.numberOfLines = 2;
         self.detailLabel.font = [UIFont systemFontOfSize:13];
         
-        [self.backgroundView setBackgroundColor:[UIColor lightGrayColor]];
+        self.backgroundView.backgroundColor = [UIColor lightGrayColor];
         
         self.titleBackgroundColor = [UIColor blackColor];
         
