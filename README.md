@@ -24,18 +24,22 @@ I was initially insipired by a control in the Destiny App, so I'd recommend chec
 
 Add a MMScrollPage to the MMScrollPresenter.
 	
-	UIImageView *mountainImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mountains.jpg"]];
-    [mountainImage setFrame:CGRectMake(0, 0, self.mmScrollPresenter.frame.size.width, self.mmScrollPresenter.frame.size.height)];
+	UIImageView *mountainImage = [[UIImageView alloc] initWithImage:[UIImage 
+		imageNamed:@"mountains.jpg"]];
+		
+    [mountainImage setFrame:CGRectMake(0, 0, self.mmScrollPresenter.frame.size.width, 
+    	self.mmScrollPresenter.frame.size.height)];
     
     MMScrollPage *firstPage = [[MMScrollPage alloc] init];
     firstPage.titleLabel.text = @"Look a picture of mountains";
     firstPage.detailLabel.text = @"I'm the detail text";
     [firstPage.backgroundView addSubview:mountainImage];
-    firstPage.titleBackgroundColor = [UIColor colorWithRed:119/255.0f green:92/255.0f blue:166/255.0f alpha:0.5];
+    firstPage.titleBackgroundColor = 
+    	[UIColor colorWithRed:119/255.0f green:92/255.0f blue:166/255.0f alpha:0.5];
     
     [self.mmScrollPresenter setupViewsWithArray:@[firstPage]];
 
-## Credits
+## Contributors
 
 - [nwpuhmz](https://github.com/nwpuhmz)
 
