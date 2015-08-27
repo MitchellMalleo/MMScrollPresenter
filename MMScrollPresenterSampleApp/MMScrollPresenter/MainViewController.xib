@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
@@ -15,17 +15,19 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agM-rA-YbE" customClass="MMScrollPresenter">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agM-rA-YbE" customClass="MMScrollPresenter">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="380"/>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="agM-rA-YbE" secondAttribute="bottom" constant="287" id="1Q4-b8-MSg"/>
                 <constraint firstItem="agM-rA-YbE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MiZ-hp-0oo"/>
                 <constraint firstAttribute="trailing" secondItem="agM-rA-YbE" secondAttribute="trailing" id="NYb-lm-r6V"/>
+                <constraint firstItem="agM-rA-YbE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dTN-T6-MYg"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="247" y="366"/>
+            <point key="canvasLocation" x="16.5" y="360.5"/>
         </view>
     </objects>
 </document>

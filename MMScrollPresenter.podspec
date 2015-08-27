@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "MMScrollPresenter"
-  s.version          = "0.0.1"
+  s.version          = "0.0.2"
   s.summary          = "iOS Custom UIScrollView Control for paging UIViews"
   s.homepage         = "https://github.com/MitchellMalleo/MMScrollPresenter"
   s.license          = 'MIT'

@@ -19,8 +19,6 @@
 {
     [super viewDidLoad];
     
-    self.mmScrollPresenter.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, self.mmScrollPresenter.frame.size.height);
-    
     UIImageView *mountainImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mountains.jpg"]];
     [mountainImage setFrame:CGRectMake(0, 0, self.mmScrollPresenter.frame.size.width, self.mmScrollPresenter.frame.size.height)];
     
@@ -49,6 +47,13 @@
     thirdPage.titleBackgroundColor = [UIColor colorWithRed:92/255.0f green:166/255.0f blue:114/255.0f alpha:1.0];
     
     [self.mmScrollPresenter addMMScrollPageArray:@[firstPage, secondPage, thirdPage]];
+    
+    [self setNeedsStatusBarAppearanceUpdate];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 
 @end
