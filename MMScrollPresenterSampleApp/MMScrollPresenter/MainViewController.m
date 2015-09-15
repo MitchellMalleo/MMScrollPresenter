@@ -28,6 +28,9 @@
     UIImageView *forestImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"forest.jpg"]];
     [forestImage setFrame:CGRectMake(0, 0, self.mmScrollPresenter.frame.size.width, self.mmScrollPresenter.frame.size.height)];
     
+    UIImageView *forestImage2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"forest.jpg"]];
+    [forestImage2 setFrame:CGRectMake(0, 0, self.mmScrollPresenter.frame.size.width, self.mmScrollPresenter.frame.size.height)];
+    
     MMScrollPage *firstPage = [[MMScrollPage alloc] init];
     firstPage.titleLabel.text = @"Look a picture of mountains";
     firstPage.detailLabel.text = @"I'm the detail text";
@@ -46,7 +49,14 @@
     [thirdPage.backgroundView addSubview:forestImage];
     thirdPage.titleBackgroundColor = [UIColor colorWithRed:92/255.0f green:166/255.0f blue:114/255.0f alpha:1.0];
     
-    [self.mmScrollPresenter addMMScrollPageArray:@[firstPage, secondPage, thirdPage]];
+    MMScrollPage *fourthPage = [[MMScrollPage alloc] init];
+    fourthPage.titleLabel.text = @"Still in a deep forest..";
+    fourthPage.detailLabel.text = @"I CAN TELL";
+    [fourthPage.backgroundView addSubview:forestImage2];
+    fourthPage.titleBackgroundColor = [UIColor colorWithRed:115/255.0f green:100/255.0f blue:50/255.0f alpha:1.0];
+    
+    
+    [self.mmScrollPresenter addMMScrollPageArray:@[firstPage, secondPage, thirdPage, fourthPage]];
     
     [self setNeedsStatusBarAppearanceUpdate];
 }

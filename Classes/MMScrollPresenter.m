@@ -150,13 +150,13 @@ static int const MMPageViewPadding = 20;
     }
     else if(pageArrayIndex != [self.pageArray count] - 1)
     {
-        self.titleViewFrame = CGRectMake(self.frame.size.width * pageArrayIndex -  MMTitleViewXOffset, 0, self.backgroundFrame.size.width -  MMTitleViewXOffset, MMTitleViewHeight);
-        self.iconFrame = CGRectMake( MMTitleViewXOffset / 2 - iconView.frame.size.width / 2, (MMTitleViewHeight / 2) - (iconView.frame.size.height / 2), iconView.frame.size.width, iconView.frame.size.height);
+        self.titleViewFrame = CGRectMake(self.frame.size.width * pageArrayIndex -  (MMTitleViewXOffset * pageArrayIndex), 0, self.backgroundFrame.size.width -  MMTitleViewXOffset, MMTitleViewHeight);
+        self.iconFrame = CGRectMake(MMTitleViewXOffset / 2 - iconView.frame.size.width / 2 + (MMTitleViewXOffset * (pageArrayIndex - 1)), (MMTitleViewHeight / 2) - (iconView.frame.size.height / 2), iconView.frame.size.width, iconView.frame.size.height);
     }
     else if(pageArrayIndex == [self.pageArray count] - 1)
     {
-        self.titleViewFrame = CGRectMake(self.frame.size.width * pageArrayIndex - ( MMTitleViewXOffset * 2), 0, self.backgroundFrame.size.width +  MMTitleViewXOffset, MMTitleViewHeight);
-        self.iconFrame = CGRectMake( MMTitleViewXOffset + ( MMTitleViewXOffset / 2 - iconView.frame.size.width / 2), (MMTitleViewHeight / 2) - (iconView.frame.size.height / 2), iconView.frame.size.width, iconView.frame.size.height);
+        self.titleViewFrame = CGRectMake(self.frame.size.width * pageArrayIndex - (MMTitleViewXOffset * pageArrayIndex), 0, self.backgroundFrame.size.width +  MMTitleViewXOffset, MMTitleViewHeight);
+        self.iconFrame = CGRectMake((MMTitleViewXOffset / 2 - iconView.frame.size.width / 2) + (MMTitleViewXOffset * (pageArrayIndex - 1)), (MMTitleViewHeight / 2) - (iconView.frame.size.height / 2), iconView.frame.size.width, iconView.frame.size.height);
     }
     
     page.backgroundView.frame = self.backgroundFrame;
