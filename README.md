@@ -16,7 +16,7 @@ I was initially insipired by a control in the Destiny App, so I'd recommend chec
 ## Installation
 
 
-1. MMScrollPresenter can be installed via [Cocoapods](http://cocoapods.org/) by adding `pod 'MMScrollPresenter'` to your podfile, or you can manually include `MMScrollPresenter.h/.m`, `MMScrollPage.h/.m`, `arrow/@2x.png` in your app.
+1. MMScrollPresenter can be installed via [CocoaPods](http://cocoapods.org/) by adding `pod 'MMScrollPresenter'` to your podfile, or you can manually include `MMScrollPresenter.h/.m`, `MMScrollPage.h/.m`, `arrow/@2x.png` in your app.
 2. Add a UIScrollView into your Interface Builder and under the custom class section, subclass your UIScrollView to MMScrollPresenter.
 3. Now add: `@property (nonatomic, weak) IBOutlet MMScrollPresenter *mmScrollPresenter;` to your list of properties and dont forget to link it up in your Interface Builder.
 
